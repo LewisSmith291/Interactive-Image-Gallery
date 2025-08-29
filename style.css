@@ -5,8 +5,19 @@ body {
 }
 
 h1{
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
     filter: drop-shadow(0.55rem 0.5rem 0.4rem rgba(0, 0, 0, 0.5));
-    margin: 3vw;
+    margin: 2vw;
+}
+
+#input-fields{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin: 2vw;
+}
+
+#gallery{
+
 }

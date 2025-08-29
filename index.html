@@ -8,12 +8,14 @@
     </head>
     <body>
         <h1>Interactive Image Gallery</h1>
-        <div>
-        <input type="text" id="imageInput" placeholder="Enter image URL">
-        <button id="addImageButton">Add Image</button>
-        <div id="gallery"></div>
-
+        <form id="input-fields">
+            <input type="text" id="image-input" placeholder="Enter image URL">
+            <input type="submit" id="add-image-button" onclick="addImage()" value="Add Image"></button>
+        </form>
+        <div id="gallery">
+            <image src="demo-image.png"></image>
+            <image src="demo-image.png"></image>
         </div>
     </body>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
 </html>
