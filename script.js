@@ -1,20 +1,43 @@
-
 const inputField = document.getElementById("image-input")
 const validExtentions = [".png", ".jpeg", ".jpg", ".gif"];
+const galleryDiv = document.getElementById("gallery");
 
 function addImage(){
     event.preventDefault();
 
     // Input Validation
     // If empty input
-    if (inputField.value == "") return;
+    if (inputField.value == ""){
+        alert("Input is empty");
+        return;
+    } 
     // If url doesn't exist
-    if (!checkURLExists(inputField.value)) return;
+    if (!checkURLExists(inputField.value)){
+        alert("Please enter a valid URL");
+        return;
+    }
     // if URL isn't image
-    if (!checkExtention(inputField.value)) return;
+    if (!checkExtention(inputField.value)){
+        alert("Please input an image URL");
+        return;
+    }
+
+    // New gallery element
+    const newGalleryItem = document.createElement("div");
+    // New image
+    const newImage = document.createElement("img");
+    newImage.src = inputField.value;
 
     
+    newGalleryItem.appendChild(newImage);
+    galleryDiv.appendChild(newGalleryItem);
 }
+
+function toggleList(){
+    const urlList = document.getElementById("url-list");
+    urlList.classList.toggle("url-list-hidden");
+}
+
 
 // Checks that the file is an image
 function checkExtention(src){

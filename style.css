@@ -11,13 +11,51 @@ h1{
     margin: 2vw;
 }
 
-#input-fields{
+.url-list{
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    background-color: rgb(231, 231, 231);
+    transition: left 0.1s ease-in;
+}
+
+.url-list-hidden{
+    left: -40vw;
+}
+
+#seperator{
+    background-color: rgb(255, 255, 255);
+}
+
+.url-name{
+    align-self: center;
+    margin: 5px;
+    background-color: white;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+#ui-container{
+    justify-content: center;
+    background-color: purple;
+    border-radius: 1.5vw;
+    gap: 2vw;
+    width: 50vw;
+} 
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1vw;
     margin: 2vw;
 }
 
-#gallery{
-
+#gallery img{
+    max-width: 30vw;
+    max-height: 30vw;
+    min-width: 200px;
+    min-height: 200px;
 }

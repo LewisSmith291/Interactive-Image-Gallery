@@ -8,13 +8,19 @@
     </head>
     <body>
         <h1>Interactive Image Gallery</h1>
-        <form id="input-fields">
-            <input type="text" id="image-input" placeholder="Enter image URL">
-            <input type="submit" id="add-image-button" onclick="addImage()" value="Add Image"></button>
-        </form>
+        <button onclick="toggleList()">TOGGLE LIST</button>
+        <div id="ui-container">
+            <div id="url-list" class="url-list url-list-hidden">
+                <div class="url-name">demo-image.png</div>
+                <div id="seperator"></div>
+            </div>
+            <div id="input-field">
+                <input type="text" id="image-input" placeholder="Enter image URL">
+                <input type="submit" id="add-image-button" onclick="addImage()" value="Add Image"></button>
+            </div>
+        </div>
         <div id="gallery">
-            <image src="demo-image.png"></image>
-            <image src="demo-image.png"></image>
+
         </div>
     </body>
     <script src="script.js"></script>
