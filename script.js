@@ -36,6 +36,9 @@ function addImage(){
 function toggleList(){
     const urlList = document.getElementById("url-list");
     urlList.classList.toggle("url-list-hidden");
+
+    const toggleListButton = document.getElementById("toggle");
+    toggleListButton.classList.toggle("toggle-button-selected");
 }
 
 

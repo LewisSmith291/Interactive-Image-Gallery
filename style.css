@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,18 +12,30 @@ h1{
     margin: 2vw;
 }
 
+.toggle-button{
+    position: absolute;
+    top: 8.5vw;
+    transition: all 0.3s ease-in;
+    left: 0vw;
+}
+
+.toggle-button-selected{
+    left: 27.5vw;
+}
+
 .url-list{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-items: center;
     background-color: rgb(231, 231, 231);
-    transition: left 0.1s ease-in;
+    transition: all 0.3s ease-in;
+    left: 0vw;
 }
 
 .url-list-hidden{
-    left: -40vw;
+    left: -100vw;
 }
 
 #seperator{
@@ -38,11 +51,11 @@ h1{
 }
 
 #ui-container{
-    justify-content: center;
+    justify-items: center;
     background-color: purple;
     border-radius: 1.5vw;
     gap: 2vw;
-    width: 50vw;
+    width: 100vw;
 } 
 
 #gallery{
@@ -50,7 +63,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1vw;
-    margin: 2vw;
+    margin: 5vw;
 }
 
 #gallery img{
