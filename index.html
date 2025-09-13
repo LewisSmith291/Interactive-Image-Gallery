@@ -8,18 +8,19 @@
     </head>
     <body>
         <h1>Interactive Image Gallery</h1>
+        <button id="toggle" class="toggle-button" onclick="toggleList()">Show Image List</button>
+        <div id="url-list" class="url-list url-list-hidden">
+            
+                <div class="url-name">demo-image.png</div>
+                <div class="url-name">demo-image.png</div>
+                <div class="url-name">demo-image.png</div>
+                <div class="url-name">demo-image.png</div>
+        </div>
         <div id="ui-container">
-                <button id="toggle" class="toggle-button" onclick="toggleList()">TOGGLE LIST</button>
-            <div id="url-list" class="url-list url-list-hidden">
-                <div class="url-name">demo-image.png</div>
-                <div class="url-name">demo-image.png</div>
-                <div class="url-name">demo-image.png</div>
-                <div class="url-name">demo-image.png</div>
-                </div>
-            <div id="input-field">
-                <input type="text" id="image-input" placeholder="Enter image URL">
-                <input type="submit" id="add-image-button" onclick="addImage()" value="Add Image"></button>
-            </div>
+        <div id="input-field">
+            <input type="text" id="image-input" placeholder="Enter image URL">
+            <input type="submit" id="add-image-button" onclick="addImage()" value="Add Image"></button>
+        </div>
         </div>
         <div id="gallery">
 

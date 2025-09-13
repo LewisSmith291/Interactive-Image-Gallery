@@ -14,13 +14,12 @@ h1{
 
 .toggle-button{
     position: absolute;
-    top: 8.5vw;
-    transition: all 0.3s ease-in;
+    top: 0vw;
     left: 0vw;
-}
-
-.toggle-button-selected{
-    left: 27.5vw;
+    font-size: 1vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    margin: 0.5vw;
 }
 
 .url-list{
@@ -30,12 +29,16 @@ h1{
     flex-wrap: wrap;
     justify-items: center;
     background-color: rgb(231, 231, 231);
-    transition: all 0.3s ease-in;
-    left: 0vw;
+    transition: all 0.3s linear;
+    left: 0;
+    top: 3vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .url-list-hidden{
-    left: -100vw;
+    left: -20vw;
 }
 
 #seperator{
@@ -47,16 +50,15 @@ h1{
     margin: 5px;
     background-color: white;
     font-style: italic;
-    font-size: 4vw;
+    font-size: 2vw;
+    border-radius: 10px;
 }
 
-#ui-container{
-    justify-items: center;
-    background-color: purple;
-    border-radius: 1.5vw;
-    gap: 2vw;
-    width: 100vw;
-} 
+#input-field{
+    justify-content: center;
+    display: flex;
+    gap: 0.5vw;
+}
 
 #gallery{
     display: flex;
